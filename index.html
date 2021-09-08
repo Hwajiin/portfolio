@@ -15,10 +15,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
-    <script defer src="src/main.js"></script>
+    <script defer type="module" src="src/main.js"></script>
     <title>Hwa Portfolio</title>
   </head>
-  <body>
+  <body class="active">
+    <!-- Nav -->
+    <nav>
+      <div id="logo"><a href="#">borderline0px</a></div>
+      <ul class="nav__list">
+        <li class="nav__home active">Home</li>
+        <li class="nav__skills">Skills</li>
+        <li class="nav__projects">Projects</li>
+        <li class="nav__aboutMe">About Me</li>
+      </ul>
+      <div class="nav__btn__container open">
+        <button class="nav__btn"></button>
+      </div>
+    </nav>
+
+    <!-- Footer -->
     <footer>
       <div class="footer__info">
         <ul class="social">

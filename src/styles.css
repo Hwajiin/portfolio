@@ -5,8 +5,9 @@
 
 @import "value.css";
 
-/* Screens */
+/* Components */
 @import "./footer/footer.css";
+@import "./nav/nav.css";
 
 * {
   box-sizing: border-box;
@@ -23,4 +24,8 @@ body {
 a {
   all: unset;
   cursor: pointer;
+}
+
+button {
+  all: unset;
 }
