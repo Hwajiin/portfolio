@@ -1,0 +1,10 @@
+:root {
+  /* color */
+  --white-color: white;
+  --black-color: rgb(17, 17, 17);
+  --grey-color: #555555;
+  /* font-size */
+  --font-size-xs: 13px;
+  /* letter */
+  --letter-spacing: 1px;
+}

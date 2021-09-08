@@ -2,3 +2,25 @@
 
 /* css style 초기화 */
 @import "reset.css";
+
+@import "value.css";
+
+/* Screens */
+@import "./footer/footer.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-size: var(--font-size-xs);
+  overflow: hidden;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
