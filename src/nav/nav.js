@@ -1,12 +1,13 @@
 class Nav {
   constructor() {
     this.navBtn = document.querySelector(".nav__btn");
+    this.nav = document.querySelector("nav");
     this.setEventListener();
   }
 
   setEventListener = () => {
     this.navBtn.addEventListener("click", () => {
-      console.log("hh");
+      this.nav.classList.toggle("open");
     });
   };
 }
