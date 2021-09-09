@@ -1,5 +1,9 @@
 import Nav from "./nav/nav.js";
+import Scroll from "./scroll.js";
 import Skills from "./skills/skills.js";
+
+// Entire Scroll Event
+const scroll = new Scroll();
 
 // Nav
 const nav = new Nav();

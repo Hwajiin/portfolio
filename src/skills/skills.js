@@ -19,9 +19,9 @@ class Skills {
     // 어디에 맞춰서 트랜지션 제거할지 고민,,,
 
     if (scrollY >= scrollTop - HEADER_HEIGHT) {
-      this.box.classList.add("active");
+      this.box.classList.add("bigger");
     } else if (scrollY < HEADER_HEIGHT) {
-      this.box.classList.remove("active");
+      this.box.classList.remove("bigger");
     }
   };
 }

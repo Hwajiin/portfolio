@@ -58,7 +58,7 @@ nav {
   display: none;
 }
 
-.nav__home.active {
+.active {
   border: 1px solid var(--black-color);
   border-radius: 50%;
 }
