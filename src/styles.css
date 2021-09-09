@@ -1,14 +1,17 @@
 @charset "UTF-8";
 
-/* css style 초기화 */
 @import "reset.css";
-
 @import "value.css";
 
 /* Components */
-@import "./footer/footer.css";
 @import "./nav/nav.css";
+@import "./home/home.css";
+@import "./skills/skills.css";
+@import "./projects/projects.css";
+@import "./about/about.css";
+@import "./footer/footer.css";
 
+/* Global */
 * {
   box-sizing: border-box;
 }
@@ -18,7 +21,7 @@ body {
   background-color: var(--white-color);
   color: var(--black-color);
   font-size: var(--font-size-xs);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -28,4 +31,14 @@ a {
 
 button {
   all: unset;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  /* padding: 50px 0; */
+}
+
+.section:nth-child(odd) {
+  background-color: tan;
 }

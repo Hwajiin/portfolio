@@ -2,12 +2,16 @@
   /* color */
   --white-color: white;
   --black-color: rgb(17, 17, 17);
-  --grey-color: #555555;
+  --dark-grey-color: #555555;
+  --light-grey-color: #eee;
   --yellow-color: #ffdd59;
+
   /* font-size */
   --font-size-xs: 13px;
+
   /* letter */
   --letter-spacing: 1px;
+
   /* spacing */
   --base-spacing: 10px;
 }

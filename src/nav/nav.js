@@ -6,8 +6,15 @@ class Nav {
   }
 
   setEventListener = () => {
+    // About nav toggle btn
     this.navBtn.addEventListener("click", () => {
-      this.nav.classList.toggle("open");
+      if (this.nav.classList.contains("open")) {
+        this.nav.classList.remove("open");
+        this.nav.classList.add("close");
+      } else {
+        this.nav.classList.add("open");
+        this.nav.classList.remove("close");
+      }
     });
   };
 }
