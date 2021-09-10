@@ -24,3 +24,93 @@
   transform: scale(1) translateY(0px);
   border-radius: 0;
 }
+
+.skills__box .max {
+  max-width: 1000px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__title {
+  position: relative;
+  font-size: var(--font-size-title);
+  font-weight: 900;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.skills__title::after {
+  content: "skills";
+  position: absolute;
+  font-weight: 500;
+  top: 30px;
+  left: 70px;
+  color: var(--black-color);
+  opacity: 0.7;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--black-color);
+}
+
+.skills__category {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.skill {
+  width: 170px;
+  height: 200px;
+  margin: 0 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(5px);
+}
+
+/* logo image */
+.skill__logo {
+  height: 70%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo__html {
+  width: 100%;
+  background-image: url("../data/logo_html.png");
+}
+
+.logo__react {
+  width: 80%;
+  background-image: url("../data/logo_react.png");
+}
+
+.logo__python {
+  width: 70%;
+  background-image: url("../data/logo_python.png");
+}
+
+.skill__info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__info > h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.5);
+}

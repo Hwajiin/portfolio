@@ -5,9 +5,11 @@
   --dark-grey-color: #555555;
   --light-grey-color: #eee;
   --yellow-color: #ffdd59;
+  --dark-green-color: #10ac84;
 
   /* font-size */
   --font-size-xs: 13px;
+  --font-size-title: 8rem;
 
   /* letter */
   --letter-spacing: 1px;
