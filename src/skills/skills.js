@@ -15,10 +15,10 @@ class Skills {
     const HEADER_HEIGHT = this.header.getBoundingClientRect().height;
     const homeHeight = this.home.getBoundingClientRect().height;
     const scrollTop = this.section.offsetTop;
-    // const shownHalf = homeHeight / 2;
-    // 어디에 맞춰서 트랜지션 제거할지 고민,,,
+    const shownHalf = homeHeight / 2;
+    // 어디에 맞춰서 트랜지션 넣을지 고민,,,
 
-    if (scrollY >= scrollTop - HEADER_HEIGHT) {
+    if (scrollY >= shownHalf) {
       this.box.classList.add("bigger");
     } else if (scrollY < HEADER_HEIGHT) {
       this.box.classList.remove("bigger");
