@@ -24,11 +24,9 @@ class Scroll {
 
   handleClick = (e) => {
     const target = e.target;
-    this.navItems.forEach((item) => item.classList.remove("active"));
     this.sections.forEach((section) => {
       if (target.dataset.scroll === section.dataset.scroll) {
         section.scrollIntoView({ behavior: "smooth" });
-        e.target.classList.add("active");
       }
     });
   };
