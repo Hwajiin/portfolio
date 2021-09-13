@@ -1,4 +1,5 @@
 import Nav from "./nav/nav.js";
+import Projects from "./projects/projects.js";
 import Scroll from "./scroll.js";
 import Skills from "./skills/skills.js";
 
@@ -17,3 +18,6 @@ window.addEventListener("scroll", scrollToSection);
 
 // Skills Section
 const skills = new Skills();
+
+// Projects Section
+const projects = new Projects();
