@@ -16,6 +16,8 @@ class Skills {
     const homeHeight = this.home.getBoundingClientRect().height;
     const scrollTop = this.section.offsetTop;
     const shownHalf = homeHeight / 2;
+    const sectionBottom = scrollTop + this.section.clientHeight;
+
     // 어디에 맞춰서 트랜지션 넣을지 고민,,,
 
     if (scrollY >= shownHalf) {
