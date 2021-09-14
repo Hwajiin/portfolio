@@ -49,10 +49,6 @@ class Projects {
       (item) => item.title === project.dataset.title
     );
 
-    // const detailThumbnail = document.createElement("div");
-    // detailThumbnail.setAttribute("class", "detail__thumbnail");
-    // this.detailData.appendChild(detailThumbnail);
-
     const html = this.createHTML(target);
     this.detailData.innerHTML = html;
 
