@@ -1,3 +1,7 @@
+#projects {
+  position: relative;
+}
+
 .projects__container {
   width: 100%;
   height: 100%;
@@ -72,6 +76,72 @@
 
 .colorIn {
   filter: grayscale(0);
+}
+
+.detail__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  transform: scale(0.7);
+  transition: all 0.3s ease-in;
+  display: none;
+}
+
+.detail__box {
+  /* 수직정렬 수정해야 됨 */
+  margin: auto;
+  position: relative;
+  margin-top: 70px;
+  width: 80%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.detail__background .close-btn {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  cursor: pointer;
+}
+
+.detail__data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.detail__thumbnail {
+  width: 50%;
+  height: 100%;
+  background-color: thistle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.detail__metadata {
+  width: 50%;
+  height: 100%;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.detail__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.showDetail {
+  display: block;
+  transform: scale(1);
 }
 
 @media screen and (max-width: 600px) {

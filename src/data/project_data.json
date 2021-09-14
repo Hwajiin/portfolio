@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "movie-app",
+      "since": 2021,
+      "image": "https://picsum.photos/200",
+      "path": "#"
+    },
+    {
+      "title": "scrapper",
+      "since": 2021,
+      "image": "https://picsum.photos/200",
+      "path": "#"
+    },
+    {
+      "title": "todolist",
+      "since": 2021,
+      "image": "https://picsum.photos/200",
+      "path": "#"
+    }
+  ]
+}

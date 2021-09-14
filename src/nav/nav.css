@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid var(--black-color);
   background-color: var(--white-color);
-  z-index: 9999;
+  z-index: 15;
 }
 
 .header__box,
