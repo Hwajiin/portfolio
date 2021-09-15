@@ -4,12 +4,13 @@
 }
 
 .aboutMe__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
   height: 100%;
-  padding: 100px 50px;
+  padding: 50px;
 }
 
 .aboutMe__main__image {
@@ -69,5 +70,19 @@
   border: 1px solid black;
   align-self: center;
   cursor: pointer;
-  margin-top: 20px;
+  position: absolute;
+  bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+  .aboutMe__main__image {
+    height: 40%;
+  }
+
+  .more-btn {
+    bottom: 70px;
+  }
 }
