@@ -7,9 +7,11 @@ header {
   align-items: center;
   padding: 0 10px;
   justify-content: space-between;
-  border-bottom: 1px solid var(--black-color);
-  background-color: var(--white-color);
+  backdrop-filter: blur(3px);
+  /* border-bottom: 1px solid var(--black-color); */
+  /* background-color: var(--white-color); */
   z-index: 15;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 }
 
 .header__box,
@@ -30,6 +32,11 @@ nav {
   font-size: 16px;
 }
 
+/* #logo a {
+  border: 1px solid black;
+  padding: 5px 7px;
+} */
+
 nav {
   padding: var(--base-spacing);
 }
@@ -46,12 +53,12 @@ nav {
   margin: 0 10px;
   padding: 0 7px;
   cursor: pointer;
-  border-radius: 50%;
   transition: all 0.2s ease;
 }
 
 .nav__list > li:hover {
-  background-color: var(--yellow-color);
+  /* background-color: var(--yellow-color); */
+  font-weight: 800;
 }
 
 .nav__btn__container {
@@ -59,8 +66,7 @@ nav {
 }
 
 .active {
-  border: 1px solid var(--black-color);
-  border-radius: 50%;
+  border-bottom: 1px solid var(--black-color);
 }
 
 @media screen and (max-width: 600px) {

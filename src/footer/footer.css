@@ -66,4 +66,5 @@ footer {
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--black-color);
+  font-size: 11px;
 }

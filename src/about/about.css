@@ -4,6 +4,7 @@
 }
 
 .aboutMe__container {
+  margin-top: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -23,19 +24,6 @@
   filter: grayscale(50%);
   margin-bottom: 20px;
 }
-
-/* .aboutMe__title {
-  display: inline-block;
-  height: 100%;
-  position: absolute;
-  text-align: center;
-  right: 10px;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.5);
-} */
 
 .timeline {
   width: 100%;
@@ -83,6 +71,6 @@
   }
 
   .more-btn {
-    bottom: 70px;
+    bottom: 40px;
   }
 }

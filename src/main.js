@@ -6,6 +6,8 @@ import Skills from "./skills/skills.js";
 // Entire Scroll Event
 const scroll = new Scroll();
 
+// Home
+
 // Nav
 const nav = new Nav();
 
