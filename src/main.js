@@ -1,3 +1,4 @@
+import Canvas from "./circle/canvas.js";
 import Nav from "./nav/nav.js";
 import Projects from "./projects/projects.js";
 import Scroll from "./scroll.js";
@@ -9,6 +10,7 @@ const scroll = new Scroll();
 const wheel = new Wheel();
 
 // Home
+const canvas = new Canvas();
 
 // Nav
 const nav = new Nav();
