@@ -1,5 +1,6 @@
 class Projects {
   constructor() {
+    this.projectsList = document.querySelector(".projects__list");
     this.projects = document.querySelectorAll(".projects__item");
     this.detailBackground = document.querySelector(".detail__background");
     this.closeBtn = document.querySelector(".close-btn");
@@ -7,9 +8,31 @@ class Projects {
     this.projectData;
     this.setEventListener();
     this.fetchData();
+    this.isDown = false;
+    this.startX;
+    this.scrollLeft;
   }
 
   setEventListener = () => {
+    this.projectsList.addEventListener("mousedown", (e) => {
+      e.preventDefault();
+      this.isDown = true;
+      this.startX = e.pageX - this.projectsList.offsetLeft;
+      this.scrollLeft = this.projectsList.scrollLeft;
+    });
+
+    this.projectsList.addEventListener("mousemove", (e) => {
+      if (!this.isDown) return;
+      e.preventDefault();
+      const x = e.pageX - this.projectsList.offsetLeft;
+      const walk = x - this.startX;
+      this.projectsList.scrollLeft = this.scrollLeft - walk;
+      console.log(walk);
+    });
+
+    this.projectsList.addEventListener("mouseup", () => (this.isDown = false));
+    this.projectsList.addEventListener("mouseout", () => (this.isDown = false));
+
     this.projects.forEach((project) =>
       project.addEventListener("mouseenter", this.removeFilter)
     );
@@ -26,6 +49,8 @@ class Projects {
       this.detailBackground.classList.remove("showDetail");
     });
   };
+
+  moveScroll = () => {};
 
   removeFilter = (e) => {
     const project = e.currentTarget;
