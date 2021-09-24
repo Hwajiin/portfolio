@@ -10,7 +10,7 @@ const scroll = new Scroll();
 const wheel = new Wheel();
 
 // Home
-const canvas = new Canvas();
+// const canvas = new Canvas();
 
 // Nav
 const nav = new Nav();
