@@ -1,13 +1,14 @@
 #aboutMe {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .aboutMe__container {
-  margin-top: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   max-width: 1000px;
   height: 100%;
@@ -21,8 +22,9 @@
   background-image: url("../data/main_image.JPG");
   background-size: cover;
   background-position: center;
-  filter: grayscale(50%);
-  margin-bottom: 20px;
+  /* filter: grayscale(50%); */
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .timeline {
@@ -59,18 +61,24 @@
   align-self: center;
   cursor: pointer;
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
 }
 
 @media screen and (max-width: 600px) {
   .timeline {
     grid-template-columns: 1fr;
   }
+
+  .aboutMe__container {
+    padding-top: 0px;
+  }
+
   .aboutMe__main__image {
     height: 40%;
+    margin-top: 0px;
   }
 
   .more-btn {
-    bottom: 40px;
+    bottom: 20px;
   }
 }
