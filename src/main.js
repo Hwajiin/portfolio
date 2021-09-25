@@ -5,25 +5,28 @@ import Scroll from "./scroll.js";
 import Skills from "./skills/skills.js";
 import Wheel from "./wheel.js";
 
-// Entire Scroll Event
-const scroll = new Scroll();
-const wheel = new Wheel();
+window.onload = () => {
+  history.scrollRestoration = "manual";
+  // Entire Scroll Event
+  const scroll = new Scroll();
+  // const wheel = new Wheel();
 
-// Home
-// const canvas = new Canvas();
+  // Home
+  // const canvas = new Canvas();
 
-// Nav
-const nav = new Nav();
+  // Nav
+  const nav = new Nav();
 
-// All Section Scroll Event
-const sections = document.querySelectorAll(".section");
+  // All Section Scroll Event
+  const sections = document.querySelectorAll(".section");
 
-function scrollToSection() {}
+  function scrollToSection() {}
 
-window.addEventListener("scroll", scrollToSection);
+  window.addEventListener("scroll", scrollToSection);
 
-// Skills Section
-const skills = new Skills();
+  // Skills Section
+  const skills = new Skills();
 
-// Projects Section
-const projects = new Projects();
+  // Projects Section
+  const projects = new Projects();
+};

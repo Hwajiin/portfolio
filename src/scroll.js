@@ -37,14 +37,23 @@ class Scroll {
     const skillsHeight = this.skills.getBoundingClientRect().height;
     const projectsHeight = this.projects.getBoundingClientRect().height;
     const aboutMeHeight = this.aboutMe.getBoundingClientRect().height;
+
     if (scrollY <= this.home.offsetTop + homeHeight / 2) {
-      this.navHome.classList.add("active");
+      setTimeout(() => {
+        this.navHome.classList.add("active");
+      }, 100);
     } else if (scrollY <= this.skills.offsetTop + skillsHeight / 2) {
-      this.navSkills.classList.add("active");
+      setTimeout(() => {
+        this.navSkills.classList.add("active");
+      }, 100);
     } else if (scrollY <= this.projects.offsetTop + projectsHeight / 2) {
-      this.navProjects.classList.add("active");
+      setTimeout(() => {
+        this.navProjects.classList.add("active");
+      }, 100);
     } else if (scrollY <= this.aboutMe.offsetTop + aboutMeHeight / 2) {
-      this.navAboutMe.classList.add("active");
+      setTimeout(() => {
+        this.navAboutMe.classList.add("active");
+      }, 100);
     }
   };
 }
