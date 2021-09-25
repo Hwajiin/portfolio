@@ -4,19 +4,55 @@
       "title": "movie-app",
       "since": 2021,
       "image": "https://picsum.photos/200",
-      "path": "#"
+      "path": "#",
+      "builtWith": ["react", "react-hooks"],
+      "api": ["the movie db"],
+      "description": "React hooks을 통해 구현한 영화 웹 페이지"
+    },
+    {
+      "title": "corona-info",
+      "since": 2021,
+      "image": "https://picsum.photos/200",
+      "path": "#",
+      "builtWith": ["react", "react-hooks"],
+      "api": ["kakao Map API", "공공데이터포털"],
+      "description": "시도별 코로나19 발생 현황을 알 수 있는 웹 페이지"
     },
     {
       "title": "scrapper",
       "since": 2021,
       "image": "https://picsum.photos/200",
-      "path": "#"
+      "path": "#",
+      "builtWith": ["python", "requests", "beautifulsoup", "flask"],
+      "api": null,
+      "description": "Python Requests 라이브러리를 통한 웹 크롤러"
     },
     {
-      "title": "todolist",
+      "title": "todolist1",
       "since": 2021,
       "image": "https://picsum.photos/200",
-      "path": "#"
+      "path": "#",
+      "builtWith": ["vanillaJS", "localStorage"],
+      "api": null,
+      "description": "localStorage 저장 기능 구현한 To Do List"
+    },
+    {
+      "title": "todolist2",
+      "since": 2021,
+      "image": "https://picsum.photos/200",
+      "path": "#",
+      "builtWith": ["react", "localStorage", "context API"],
+      "api": null,
+      "description": "localStorage 저장 기능 구현한 To Do List"
+    },
+    {
+      "title": "localDustInfo",
+      "since": 2021,
+      "image": "https://picsum.photos/200",
+      "path": "#",
+      "builtWith": ["react", "react-class"],
+      "api": ["kakao Map API", "공공데이터포털"],
+      "description": "에어코리아의 대기오염 통계 데이터를 활용하여 우리지역의 실시간 평균 정보를 조회하는 웹"
     }
   ]
 }
